@@ -1,11 +1,15 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { MyButton } from "./stackoverflow/MyButton";
+import { Link } from "react-router";
 
 function App() {
+  console.log("Rendering App");
+
   return (
     <>
-      <MyButton />
+      <h1>Hello, App!</h1>
+      <Link to="/my-button">My Button</Link>
+      <br />
+      <Link to="/sidebar">Sidebar</Link>
     </>
   );
 }
